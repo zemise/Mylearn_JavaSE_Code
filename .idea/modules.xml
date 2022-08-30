@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Idea_test/Idea_test.iml" filepath="$PROJECT_DIR$/Idea_test/Idea_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Idea_test01/Idea_test01.iml" filepath="$PROJECT_DIR$/Idea_test01/Idea_test01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSE_Code.iml" filepath="$PROJECT_DIR$/JavaSE_Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MethodDemo/MethodDemo.iml" filepath="$PROJECT_DIR$/MethodDemo/MethodDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/idea_demo/idea_demo.iml" filepath="$PROJECT_DIR$/idea_demo/idea_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myArray/myArray.iml" filepath="$PROJECT_DIR$/myArray/myArray.iml" />
+    </modules>
+  </component>
+</project>
