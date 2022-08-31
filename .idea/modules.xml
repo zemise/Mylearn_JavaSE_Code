@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Debug/Debug.iml" filepath="$PROJECT_DIR$/Debug/Debug.iml" />
       <module fileurl="file://$PROJECT_DIR$/Idea_test/Idea_test.iml" filepath="$PROJECT_DIR$/Idea_test/Idea_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/Idea_test01/Idea_test01.iml" filepath="$PROJECT_DIR$/Idea_test01/Idea_test01.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSE_Code.iml" filepath="$PROJECT_DIR$/JavaSE_Code.iml" />
