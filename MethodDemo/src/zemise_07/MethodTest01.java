@@ -50,7 +50,7 @@ public class MethodTest01 {
     public static void printArray(int[] arr){
         System.out.print("[");
         for(int x = 0;x<arr.length; x++){
-            System.out.print(arr[x]);
+            System.out.print(arr[x] + ", ");
         }
         System.out.println("]");
     }
