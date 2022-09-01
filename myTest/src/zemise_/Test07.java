@@ -31,6 +31,7 @@ public class Test07 {
             //System.out.println("两个数组内容不相同");
             return false;
         } else {
+
             //其次遍历，比较两个数组中的每一个元素，只要有元素不相同，返回false
             for (int i = 0; i < arr.length; i++) {
                 if (arr[i] != arr2[i]) {
@@ -38,6 +39,7 @@ public class Test07 {
                     return false;
                 }
             }
+
             //System.out.println("两个数组内容相同");
             return true;
         }

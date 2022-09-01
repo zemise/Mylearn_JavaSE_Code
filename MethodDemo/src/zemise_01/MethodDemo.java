@@ -24,10 +24,6 @@ public class MethodDemo {
         int number = sc.nextInt();
 
         //判断该数据是否是偶数
-        if(number %2==0){
-            System.out.println(true);
-        }else{
-            System.out.println(false);
-        }
+        System.out.println(number % 2 == 0);
     }
 }
