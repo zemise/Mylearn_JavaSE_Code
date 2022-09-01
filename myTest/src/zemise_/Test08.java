@@ -28,11 +28,11 @@ public class Test08 {
 
         //输出索引变量
 
-        System.out.println(compare(arr, x));
+        System.out.println(getIndex(arr, x));
     }
 
     //构建一个方法找出索引值
-    public static int compare(int[] arr, int x) {
+    public static int getIndex(int[] arr, int x) {
 
         //定义一个索引变量，初始值为-1
         int index = -1;
@@ -40,8 +40,9 @@ public class Test08 {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == x) {
                 index = i;
-                return index;
+                break;
             }
         }
+    return index;
     }
 }
