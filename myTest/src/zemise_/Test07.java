@@ -40,6 +40,7 @@ public class Test07 {
                 }
             }
 
+
             //System.out.println("两个数组内容相同");
             return true;
         }
