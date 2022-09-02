@@ -11,4 +11,8 @@ public class Student {
         System.out.println("好好学习，天天向上");
     }
 
+    public void deHomework(){
+        System.out.println("键盘敲烂，月薪过万");
+    }
+
 }
