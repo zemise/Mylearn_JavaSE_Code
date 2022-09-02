@@ -8,12 +8,13 @@ public class StudentDemo {
         Student s = new Student();
 
         //使用用对象
-        System.out.println(s.name + "," + s.age);
+        System.out.println(s.name + "," + s.getAge());
 
         s.name = "林青霞";
-        s.age=30;
+        //s.age=30;
+        s.setAge(30);
 
-        System.out.println(s.name + "," + s.age);
+        System.out.println(s.name + "," + s.getAge());
 
         s.study();
         s.deHomework();
