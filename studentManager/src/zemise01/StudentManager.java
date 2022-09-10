@@ -11,9 +11,8 @@ public class StudentManager {
     public static void main(String[] args) {
         //创建一个学生对象的集合，用于存储所有学生的信息
         ArrayList<Student> Array = new ArrayList<>();
-        
-        boolean k = false;
-        while(k){
+        boolean k = true;
+        while(!k);{
             //键盘录入管理页面的选择
             Scanner sc = new Scanner(System.in);
             //管理界面提示系统
@@ -48,17 +47,15 @@ public class StudentManager {
                     Array.add(student);
 
                     System.out.println("添加学生成功！");
-                    return;
-
                 }
                 case "2":{}
                 case "3":{}
                 case "4":{}
                 case "5":{
-                    k = true;
-                    return;
+                    System.exit(0);
                 }
-
+                default:
+                    k = true;
             }
 
         }
