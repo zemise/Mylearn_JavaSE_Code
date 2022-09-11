@@ -49,7 +49,25 @@ public class StudentManager {
                     break;
                 }
                 case "2": {
+                    //删除学生信息
+                    System.out.println("请输入你要修改的学生学号：");
+                    String sid = sc.nextLine();
+
+                    int index = 0;
+                    for(int i = 1;i<Array.size();i++){
+                        Student k = new Student();
+                        k = Array.get(i);
+                        if(k.getSid() == sid){
+                            index = i;
+                            break;
+                        }
+                    }
+
+                    //根据index，删除对应的学生信息
+                    Array.remove(index);
+                    System.out.println("删除学生信息成功！");
                     break;
+
                 }
                 case "3": {
                     //修改学生信息
@@ -57,8 +75,21 @@ public class StudentManager {
                     String sid = sc.nextLine();
                     //根据修改的学生的学号，来查找学生集合里的所在位置
                     //<(sid name age address), (sid1 name1 age1 address1)>
+
                     //todo 此处有错误，没有正确调出index
-                    int index = Array.indexOf(sid);
+                    //int index = Array.indexOf(sid);错误！
+                    //只能先遍历了
+
+                    int index = 0;
+                    for(int i = 1;i<Array.size();i++){
+                        Student k = new Student();
+                        k = Array.get(i);
+                        if(k.getSid() == sid){
+                            index = i;
+                            break;
+                        }
+                    }
+
                     //获取修改学生的新信息
 
                     System.out.println("请输入学生的新姓名：");
@@ -98,20 +129,20 @@ public class StudentManager {
     }
 
     //定义一个方法，用于添加学生信息
-    public static void addStudent(ArrayList<Student> array) {
+    public void addStudent(ArrayList<Student> array) {
 
     }
 
     //定义一个方法，用于查看学生信息
-    public static void findAllStudent(ArrayList<Student> array) {
+    public void findAllStudent(ArrayList<Student> array) {
     }
 
     //定义一个方法，用于删除学生信息
-    public static void deleteStudent(ArrayList<Student> array) {
+    public void deleteStudent(ArrayList<Student> array) {
     }
 
     //定义一个方法，用于修改学生信息
-    public static void updateStudent(ArrayList<Student> array) {
+    public void updateStudent(ArrayList<Student> array) {
     }
 
 }
