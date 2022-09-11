@@ -57,7 +57,7 @@ public class StudentManager {
                     String sid = sc.nextLine();
                     //根据修改的学生的学号，来查找学生集合里的所在位置
                     //<(sid name age address), (sid1 name1 age1 address1)>
-
+                    //todo 此处有错误，没有正确调出index
                     int index = Array.indexOf(sid);
                     //获取修改学生的新信息
 
