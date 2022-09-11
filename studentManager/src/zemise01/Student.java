@@ -2,6 +2,7 @@ package zemise01;
 
 /*
     学生类
+    mac电脑可以用ctrl+ enter快速生成构造方法和get\set方法
  */
 public class Student {
     //学号
