@@ -13,7 +13,7 @@ public class StudentManager {
         ArrayList<Student> Array = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
 
-        for (String s = "0"; s.equals("5"); ) {
+        for (String s = "0"; !s.equals("5"); ) {
             //键盘录入管理页面的选择
 
             //管理界面提示系统
@@ -23,7 +23,8 @@ public class StudentManager {
             System.out.println("3 修改学生");
             System.out.println("4 查看所有学生");
             System.out.println("5 退出");
-            System.out.println("请输出你的选择：");
+            System.out.println
+                    ("请输出你的选择：");
             s = sc.nextLine();
 
             switch (s) {
@@ -54,6 +55,13 @@ public class StudentManager {
                     break;
                 }
                 case "4": {
+                    System.out.println("学号" + "    姓名" + "    年龄" + "    居住地");
+                    //查看所有学生
+                    for (int i = 0; i < Array.size(); i++) {
+                        Student student = new Student();
+                        student = Array.get(i);
+                        System.out.println(student.getSid() + "    " + student.getName() + "    " + student.getAge() + "    " + student.getAddress());
+                    }
                     break;
                 }
                 case "5": {
