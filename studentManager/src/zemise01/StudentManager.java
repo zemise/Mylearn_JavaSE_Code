@@ -52,6 +52,32 @@ public class StudentManager {
                     break;
                 }
                 case "3": {
+                    //修改学生信息
+                    System.out.println("请输入你要修改的学生学号：");
+                    String sid = sc.nextLine();
+                    //根据修改的学生的学号，来查找学生集合里的所在位置
+                    //<(sid name age address), (sid1 name1 age1 address1)>
+
+                    int index = Array.indexOf(sid);
+                    //获取修改学生的新信息
+
+                    System.out.println("请输入学生的新姓名：");
+                    String name = sc.nextLine();
+                    System.out.println("请输入学生的新年龄：");
+                    String age = sc.nextLine();
+                    System.out.println("请输入学生的新居住地：");
+                    String address = sc.nextLine();
+
+                    //根据index，和新信息修改学生集合
+                    Student student = new Student();
+                    student.setSid(sid);
+                    student.setName(name);
+                    student.setAge(age);
+                    student.setAddress(address);
+
+                    Array.set(index, student);
+                    System.out.println("修改学生信息成功！");
+
                     break;
                 }
                 case "4": {
