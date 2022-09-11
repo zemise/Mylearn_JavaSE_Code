@@ -11,10 +11,11 @@ public class StudentManager {
     public static void main(String[] args) {
         //创建一个学生对象的集合，用于存储所有学生的信息
         ArrayList<Student> Array = new ArrayList<>();
-        boolean k = true;
-        while(!k);{
+        Scanner sc = new Scanner(System.in);
+
+        for (String s = "0"; s.equals("5"); ) {
             //键盘录入管理页面的选择
-            Scanner sc = new Scanner(System.in);
+
             //管理界面提示系统
             System.out.println("------------------欢迎来到学生管理系统------------------");
             System.out.println("1 添加学生");
@@ -23,11 +24,10 @@ public class StudentManager {
             System.out.println("4 查看所有学生");
             System.out.println("5 退出");
             System.out.println("请输出你的选择：");
+            s = sc.nextLine();
 
-            String s = sc.nextLine();
-
-            switch(s){
-                case "1":{
+            switch (s) {
+                case "1": {
                     System.out.println("请输入学生学号：");
                     String sid = sc.nextLine();
                     System.out.println("请输入学生姓名：");
@@ -43,37 +43,41 @@ public class StudentManager {
                     student.setAge(age);
                     student.setAddress(address);
 
-
                     Array.add(student);
-
                     System.out.println("添加学生成功！");
+                    break;
                 }
-                case "2":{}
-                case "3":{}
-                case "4":{}
-                case "5":{
-                    System.exit(0);
+                case "2": {
+                    break;
                 }
-                default:
-                    k = true;
+                case "3": {
+                    break;
+                }
+                case "4": {
+                    break;
+                }
+                case "5": {
+                    s = "5";
+                }
             }
-
         }
-
     }
 
     //定义一个方法，用于添加学生信息
-    public static void addStudent(ArrayList<Student> array){
+    public static void addStudent(ArrayList<Student> array) {
 
     }
 
     //定义一个方法，用于查看学生信息
-    public static void findAllStudent(ArrayList<Student> array){}
+    public static void findAllStudent(ArrayList<Student> array) {
+    }
 
     //定义一个方法，用于删除学生信息
-    public static void deleteStudent(ArrayList<Student> array){}
+    public static void deleteStudent(ArrayList<Student> array) {
+    }
 
     //定义一个方法，用于修改学生信息
-    public static void updateStudent(ArrayList<Student> array){}
+    public static void updateStudent(ArrayList<Student> array) {
+    }
 
 }
