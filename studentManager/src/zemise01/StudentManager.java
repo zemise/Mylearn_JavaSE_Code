@@ -28,85 +28,23 @@ public class StudentManager {
 
             Scanner sc = new Scanner(System.in);
             String line = sc.nextLine();
+
+
             switch (line) {
                 case "1": {
                     addStudent(Array);
                     break;
                 }
                 case "2": {
-                    System.out.println("删除学生");
-                    //删除学生信息
-                    System.out.println("请输入你要修改的学生学号：");
-                    String sid = sc.nextLine();
-
-                    int index = 0;
-                    for(int i = 1;i<Array.size();i++){
-                        Student k = new Student();
-                        k = Array.get(i);
-                        if(k.getSid() == sid){
-                            index = i;
-                            break;
-                        }
-                    }
-
-                    //根据index，删除对应的学生信息
-                    Array.remove(index);
-                    System.out.println("删除学生信息成功！");
+                    deleteStudent(Array);
                     break;
-
                 }
                 case "3": {
-                    System.out.println("修改学生");
-                    //修改学生信息
-                    System.out.println("请输入你要修改的学生学号：");
-                    String sid = sc.nextLine();
-                    //根据修改的学生的学号，来查找学生集合里的所在位置
-                    //<(sid name age address), (sid1 name1 age1 address1)>
-
-                    //todo 此处有错误，没有正确调出index
-                    //int index = Array.indexOf(sid);错误！
-                    //只能先遍历了
-
-                    int index = 0;
-                    for(int i = 1;i<Array.size();i++){
-                        Student k = new Student();
-                        k = Array.get(i);
-                        if(k.getSid() == sid){
-                            index = i;
-                            break;
-                        }
-                    }
-
-                    //获取修改学生的新信息
-
-                    System.out.println("请输入学生的新姓名：");
-                    String name = sc.nextLine();
-                    System.out.println("请输入学生的新年龄：");
-                    String age = sc.nextLine();
-                    System.out.println("请输入学生的新居住地：");
-                    String address = sc.nextLine();
-
-                    //根据index，和新信息修改学生集合
-                    Student student = new Student();
-                    student.setSid(sid);
-                    student.setName(name);
-                    student.setAge(age);
-                    student.setAddress(address);
-
-                    Array.set(index, student);
-                    System.out.println("修改学生信息成功！");
-
+                    updateStudent(Array);
                     break;
                 }
                 case "4": {
-                    System.out.println("查看所有学生");
-                    System.out.println("学号" + "    姓名" + "    年龄" + "    居住地");
-                    //查看所有学生
-                    for (int i = 0; i < Array.size(); i++) {
-                        Student student = new Student();
-                        student = Array.get(i);
-                        System.out.println(student.getSid() + "    " + student.getName() + "    " + student.getAge() + "    " + student.getAddress());
-                    }
+                    findAllStudent(Array);
                     break;
                 }
                 case "5": {
@@ -133,7 +71,7 @@ public class StudentManager {
         String address = sc.nextLine();
 
         //创建学生对象，把键盘录入的数据赋值给学生对象的成员变量
-        Student s =new Student();
+        Student s = new Student();
         s.setSid(sid);
         s.setName(name);
         s.setAge(age);
@@ -146,14 +84,76 @@ public class StudentManager {
 
     //定义一个方法，用于查看学生信息
     public static void findAllStudent(ArrayList<Student> array) {
+
+        if(array.size() == 0){
+            System.out.println("无信息，清先添加学生信息");
+            //为了让程序不再继续执行
+            return;
+        }else {
+            //显示表头信息
+            //\t其实就是tab键的位置
+            System.out.println("学号\t\t\t姓名\t\t年龄\t\t居住地");
+
+            //将集合中的数据取出按照对应格式显示学生信息，年龄显示补充"岁"
+            for (int i = 0; i < array.size(); i++) {
+                Student s = array.get(i);
+                System.out.println(s.getSid() + "\t\t\t" + s.getName() + "\t\t" + s.getAge() + "岁\t" + s.getAddress());
+            }
+        }
+
     }
 
     //定义一个方法，用于删除学生信息
     public static void deleteStudent(ArrayList<Student> array) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("删除学生");
+        //删除学生信息
+        System.out.println("请输入你要删除的学生学号：");
+        String sid = sc.nextLine();
+
+        for (int i = 0; i < array.size(); i++) {
+            Student k = array.get(i);
+            if (k.getSid().equals(sid)) {
+                array.remove(i);
+                break;
+            }
+        }
+        System.out.println("删除学生信息成功！");
     }
 
     //定义一个方法，用于修改学生信息
     public static void updateStudent(ArrayList<Student> array) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("请输入需要修改的学生的学号");
+        String sid = sc.nextLine();
+
+        System.out.println("请输入学生新姓名：");
+        String name = sc.nextLine();
+
+        System.out.println("请输入学生新年龄：");
+        String age = sc.nextLine();
+
+        System.out.println("请输入学生新居住地：");
+        String address = sc.nextLine();
+
+        //创建新的学生对象
+        Student s = new Student();
+        s.setSid(sid);
+        s.setName(name);
+        s.setAge(age);
+        s.setAddress(address);
+
+        for (int i = 0; i < array.size(); i++) {
+            Student k = array.get(i);
+            if (k.getSid().equals(sid)) {
+                array.set(i, s);
+                break;
+            }
+        }
+
+        System.out.println("修改学生成功");
     }
 
 }
