@@ -82,6 +82,17 @@ public class StudentManager {
         System.out.println("添加学生信息成功！");
     }
 
+    //定义一个方法，判断学生是否被使用
+    public static boolean isUsed(ArrayList<Student> array, String sid){
+        //如果与集合中的某一个学生学号相同，返回为true；如果都不相同，返回为false
+        boolean flag = false;
+        for(int i = 0; i< array.size(); i++){
+            //array.get(i)
+        }
+        return flag;
+
+    }
+
     //定义一个方法，用于查看学生信息
     public static void findAllStudent(ArrayList<Student> array) {
 
@@ -112,14 +123,20 @@ public class StudentManager {
         System.out.println("请输入你要删除的学生学号：");
         String sid = sc.nextLine();
 
+        int index = -1;
         for (int i = 0; i < array.size(); i++) {
             Student k = array.get(i);
             if (k.getSid().equals(sid)) {
-                array.remove(i);
+                index = i;
                 break;
             }
         }
-        System.out.println("删除学生信息成功！");
+        if(index == -1){
+            System.out.println("该信息不存在，请重新输入");
+        }else{
+            array.remove(index);
+            System.out.println("删除学生信息成功！");
+        }
     }
 
     //定义一个方法，用于修改学生信息
