@@ -4,6 +4,7 @@ package zemise01;
     学生管理系统
  */
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -59,10 +60,21 @@ public class StudentManager {
     public static void addStudent(ArrayList<Student> array) {
         //键盘录入学生对象所需要的数据，显示提示信息，提示要输入何种信息
         Scanner sc = new Scanner(System.in);
-        System.out.println("添加学生");
 
-        System.out.println("请输入学生学号：");
-        String sid = sc.nextLine();
+       String sid;
+
+        System.out.println("添加学生");
+        //为了让程序能够回到这里，使用循环实现
+        while(true) {
+            System.out.println("请输入学生学号：");
+            sid = sc.nextLine();
+            boolean flag = isUsed(array, sid);
+            if (flag) {
+                System.out.println("你输入的学好已经被使用，请重新输入");
+            }else {
+                break;
+            }
+        }
         System.out.println("请输入学生姓名：");
         String name = sc.nextLine();
         System.out.println("请输入学生年龄：");
@@ -87,7 +99,11 @@ public class StudentManager {
         //如果与集合中的某一个学生学号相同，返回为true；如果都不相同，返回为false
         boolean flag = false;
         for(int i = 0; i< array.size(); i++){
-            //array.get(i)
+            Student s =array.get(i);
+            if(s.getSid().equals(sid)){
+                flag = true;
+                break;
+            }
         }
         return flag;
 
