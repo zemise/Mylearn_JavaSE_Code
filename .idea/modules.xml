@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/MyModifier/MyModifier.iml" filepath="$PROJECT_DIR$/MyModifier/MyModifier.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyStatic/MyStatic.iml" filepath="$PROJECT_DIR$/MyStatic/MyStatic.iml" />
       <module fileurl="file://$PROJECT_DIR$/idea_demo/idea_demo.iml" filepath="$PROJECT_DIR$/idea_demo/idea_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myAbsract/myAbsract.iml" filepath="$PROJECT_DIR$/myAbsract/myAbsract.iml" />
       <module fileurl="file://$PROJECT_DIR$/myArrarylist/myArrarylist.iml" filepath="$PROJECT_DIR$/myArrarylist/myArrarylist.iml" />
       <module fileurl="file://$PROJECT_DIR$/myArray/myArray.iml" filepath="$PROJECT_DIR$/myArray/myArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/myClass/myClass.iml" filepath="$PROJECT_DIR$/myClass/myClass.iml" />
