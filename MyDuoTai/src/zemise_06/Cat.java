@@ -12,4 +12,8 @@ public class Cat extends Animal{
     public void eat() {
         System.out.println("猫吃鱼崽崽");
     }
+
+    public void playGame(){
+        System.out.println("猫戏耍老鼠");
+    }
 }
