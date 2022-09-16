@@ -5,6 +5,9 @@
       <module name="myAbsract" options="--add-modules java.base" />
       <module name="myArrarylist" options="--add-modules java.base" />
       <module name="myInterface" options="--add-modules java.base" />
+      <module name="myMath" options="--add-modules java.base" />
+      <module name="myObject" options="--add-modules java.base" />
+      <module name="mySystem" options="--add-modules java.base" />
     </option>
   </component>
 </project>

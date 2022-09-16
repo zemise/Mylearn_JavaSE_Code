@@ -22,8 +22,10 @@
       <module fileurl="file://$PROJECT_DIR$/myInnerClass/myInnerClass.iml" filepath="$PROJECT_DIR$/myInnerClass/myInnerClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/myInterface/myInterface.iml" filepath="$PROJECT_DIR$/myInterface/myInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/myMath/myMath.iml" filepath="$PROJECT_DIR$/myMath/myMath.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myObject/myObject.iml" filepath="$PROJECT_DIR$/myObject/myObject.iml" />
       <module fileurl="file://$PROJECT_DIR$/myString/myString.iml" filepath="$PROJECT_DIR$/myString/myString.iml" />
       <module fileurl="file://$PROJECT_DIR$/myStringBuilder/myStringBuilder.iml" filepath="$PROJECT_DIR$/myStringBuilder/myStringBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mySystem/mySystem.iml" filepath="$PROJECT_DIR$/mySystem/mySystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/myTest/myTest.iml" filepath="$PROJECT_DIR$/myTest/myTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/studentManager/studentManager.iml" filepath="$PROJECT_DIR$/studentManager/studentManager.iml" />
     </modules>
