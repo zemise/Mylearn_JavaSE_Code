@@ -23,8 +23,7 @@ public class CalendarTest {
 
         // 2：设置日历对象的年、月、日
         Calendar c = Calendar.getInstance();
-        c.set(Calendar.YEAR, y);
-        c.set(Calendar.MONTH, 2);
+        c.set(y,2,1);
         c.add(Calendar.DATE, -1);
         int day = c.get(Calendar.DATE);
 
