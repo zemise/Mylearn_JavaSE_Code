@@ -32,14 +32,19 @@ public class ListDemo02 {
 //        System.out.println(list.remove(12));//IndexOutOfBoundsException
 
         //E set(int index， E element)：修改指定索引处的元素，返回被修改的元素
-        System.out.println(list.set(0,"javaee"));
+//        System.out.println(list.set(0,"javaee"));
 
 
         // E get(int index)：返回指定索引处的元素
-        System.out.println(list.get(1));
+//        System.out.println(list.get(1));
 
         //输出集合对象
-        System.out.println(list);
+//        System.out.println(list);
 
+        //遍历集合
+        for(int i = 0 ;i < list.size();i++){
+            String s = list.get(i);
+            System.out.println(s);
+        }
     }
 }
