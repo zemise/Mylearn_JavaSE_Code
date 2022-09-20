@@ -1,6 +1,7 @@
 package zemise_06;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /*
@@ -28,8 +29,31 @@ public class ListDemo {
         Student s3 = new Student("薛宝钗",26);
         Student s4 = new Student("赵努力",28);
 
-        //
+        // 4：把学生添加到集合
+        list.add(s1);
+        list.add(s2);
+        list.add(s3);
+        list.add(s4);
 
+        //5：遍历集合
+        //迭代器：集合特有的遍历方式
+        Iterator<Student> it = list.iterator();
+        while(it.hasNext()){
+            Student s = it.next();
+            System.out.println(s.getName() + "," + s.getAge());
+        }
+        System.out.println("=====================");
 
+        //普通for：带有索引的遍历方式
+        for(int i = 0; i< list.size(); i++){
+            Student s = list.get(i);
+            System.out.println(s.getName() + "," + s.getAge());
+        }
+        System.out.println("=====================");
+
+        //增强for：最方便的遍历方式
+        for(Student s:list){
+            System.out.println(s.getName() + "," + s.getAge());
+        }
     }
 }
