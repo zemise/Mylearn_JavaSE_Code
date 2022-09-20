@@ -32,7 +32,7 @@ public class ArrayListDemo {
         //4：把学生添加到集合
         arr.add(s1);
         arr.add(s2);
-        arr.add(s2);
+        arr.add(s3);
 
         //遍历集合
         //迭代器：集合特有的遍历方式
