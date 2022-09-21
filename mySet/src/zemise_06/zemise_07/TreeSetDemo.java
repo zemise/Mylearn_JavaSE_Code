@@ -1,4 +1,4 @@
-package zemise_07;
+package zemise_06.zemise_07;
 
 import java.util.Comparator;
 import java.util.TreeSet;

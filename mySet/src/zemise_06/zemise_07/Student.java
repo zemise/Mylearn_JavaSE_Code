@@ -1,4 +1,4 @@
-package zemise_07;
+package zemise_06.zemise_07;
 
 public class Student {
     private String name;
