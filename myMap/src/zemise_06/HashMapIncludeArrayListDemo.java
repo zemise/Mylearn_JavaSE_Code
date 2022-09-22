@@ -59,15 +59,15 @@ public class HashMapIncludeArrayListDemo {
             for (String s : arrayList) {
                 System.out.println("\t" + s);
             }
-        }*/
-
+        }
+*/
         Set<Map.Entry<String, ArrayList<String>>> entries = hm.entrySet();
         for (Map.Entry<String, ArrayList<String>> entry : entries) {
             String key = entry.getKey();
             ArrayList<String> value = entry.getValue();
             System.out.println(key + ":");
 
-            for(String name: value){
+            for (String name : value) {
                 System.out.println("\t" + name);
             }
         }
