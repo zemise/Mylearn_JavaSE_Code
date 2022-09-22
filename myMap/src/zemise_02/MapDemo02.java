@@ -1,4 +1,4 @@
-package zemise_03;
+package zemise_02;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,7 +14,7 @@ import java.util.Set;
             用getKey()得到键
             用getValue()得到值
  */
-public class MaoDemo02 {
+public class MapDemo02 {
     public static void main(String[] args) {
         //创建集合对象
         Map<String, String> map=new HashMap<>();
