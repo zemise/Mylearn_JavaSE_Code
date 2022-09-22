@@ -1,4 +1,4 @@
-package zemise_06;
+package zemise_01.zemise_06;
 
 import java.util.ArrayList;
 import java.util.HashMap;
