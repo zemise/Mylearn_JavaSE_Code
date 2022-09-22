@@ -36,10 +36,18 @@ public class HashMapDemo {
         //5：遍历集合
         //方式1：键找值
         Set<String> keySet = map.keySet();
-        for (String s: keySet) {
+        for (String s : keySet) {
             Student student = map.get(s);
             System.out.println("学号：" + s + ",姓名：" + student.getName() + ",年龄：" + student.getAge());
         }
+        System.out.println("=================================");
 
+        //方式2，键值对对象找键和值
+        Set<Map.Entry<String, Student>> entries = map.entrySet();
+        for (Map.Entry<String, Student> entry : entries) {
+            String ID = entry.getKey();
+            Student s = entry.getValue();
+            System.out.println("学号：" + ID + ",姓名：" + s.getName() + ",年龄：" + s.getAge());
         }
     }
+}
