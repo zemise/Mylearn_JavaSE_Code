@@ -63,9 +63,6 @@ public class PokerDemo {
         lookPoker("player2" , player2);
         lookPoker("player3" , player3);
         lookPoker("最后底牌" , lastCards);
-
-
-
     }
 
     //看牌的方法
