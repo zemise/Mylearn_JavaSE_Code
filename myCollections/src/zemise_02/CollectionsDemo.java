@@ -21,7 +21,7 @@ import java.util.Comparator;
 public class CollectionsDemo {
     public static void main(String[] args) {
         //2：创建ArrayList集合对象
-        ArrayList<Student> arr = new ArrayList<>();
+        ArrayList<zemise_02.Student> arr = new ArrayList<>();
 
         //3：创建学生对象
         Student s1 =new Student("linqingxia", 22);
