@@ -13,4 +13,7 @@ package zemise_04;
         8：调用看牌方法
  */
 public class PokerDemo {
+    public static void main(String[] args) {
+
+    }
 }
