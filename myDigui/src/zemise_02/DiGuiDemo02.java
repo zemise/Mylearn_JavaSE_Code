@@ -19,27 +19,28 @@ import java.io.File;
 public class DiGuiDemo02 {
     public static void main(String[] args) {
         //1：根据给定的路径创建一个File对象
-        File file = new File("/Users/Shared");
+        File srcFile = new File("/Users/Shared/Adobe");
 
         //6：调用方法
-        System.out.println(getFile(file));
+        getFilePath(srcFile);
     }
     //2：定义一个方法，用于获取给定目录下的所有内容，参数为第1步创建的FiLe对象
 
-    public static String getFile(File file){
+    public static void getFilePath(File srcFile){
         //3：获取给定的File目录下所有的文件或者目录的File数组
-        File[] files = file.listFiles();
+        File[] fileArray = srcFile.listFiles();
         //4：遍历该File数组，得到每一个File对象
-        String absolutePath = "";
-        for(File f :files){
-           //5：判断该File对象是否是目录
-            if(f.isDirectory()){
-                //是：递归调用
-                return getFile(f);
-            }else{
-                absolutePath = f.getAbsolutePath();
+        String absolutePath;
+        if(fileArray != null) {
+            for (File file : fileArray) {
+                //5：判断该File对象是否是目录
+                if (file.isDirectory()) {
+                    //是：递归调用
+                    getFilePath(file);
+                } else {
+                    System.out.println(file.getAbsolutePath());
+                }
             }
-
         }
     }
 }
