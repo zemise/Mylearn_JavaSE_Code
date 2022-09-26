@@ -1,7 +1,5 @@
 package zemise_03;
 
-
-import java.awt.*;
 import java.io.*;
 
 /*

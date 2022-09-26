@@ -1,0 +1,7 @@
+abc
+abcded
+hello
+world
+java
+中国
+abc中国
