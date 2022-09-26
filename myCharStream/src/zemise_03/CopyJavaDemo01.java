@@ -17,12 +17,17 @@ public class CopyJavaDemo01 {
         //1：根据数据源创建字符输入流对象
         InputStreamReader irs = new InputStreamReader(new FileInputStream("myCharStream/src/zemise_02/ConversionStreamDemo.java"));
         //2：根据目的地创建字符输出流对象
-        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("myCharStream/src/zemise_03/Copy.java"));
+        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("myCharStream/Copy.java"));
         //3：读写数据，复制文件
-        char[] chs = new char[1024];
+/*        char[] chs = new char[1024];
         int len;
         while ((len = irs.read(chs)) != -1) {
             osw.write(chs);
+        }*/
+
+        int len;
+        while((len=irs.read())!= -1){
+            osw.write(len);
         }
 
 
