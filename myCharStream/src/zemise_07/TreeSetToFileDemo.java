@@ -1,4 +1,8 @@
 package zemise_07;
+
+import java.util.Comparator;
+import java.util.TreeSet;
+
 /*
     需求：键盘录入5个学生信息(姓名，语文成绩，数学成绩，英语成绩）。要求按照成绩总分从高到低写入文本文件
         格式：姓名，语文成绩，数学成绩，英语成绩举例：林青電，98，99，100
@@ -17,6 +21,19 @@ package zemise_07;
  */
 public class TreeSetToFileDemo {
     public static void main(String[] args) {
+        //2：创建 TreeSet集合，通过比较器排序进行排序
+        TreeSet<Student> ts = new TreeSet<>(new Comparator<Student>() {
+            @Override
+            public int compare(Student s1, Student s2) {
+                //成绩总分从高到低
+                int num = s2.getTotal_Score() - s1.getTotal_Score();
+                //次要条件
+                int num2 = num==0? s1.getChinese_Score()-s2.getChinese_Score():num;
+                int num3 = num2==0? s1.getMath_Score() -s2.getMath_Score():num2;
+                int num4 = num3==0? s1.getName().compareTo(s2.getName()) :num3;
 
+                return num4;
+            }
+        });
     }
 }
