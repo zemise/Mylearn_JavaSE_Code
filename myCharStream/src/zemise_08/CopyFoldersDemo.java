@@ -13,13 +13,13 @@ import java.io.*;
         4：判断数据源File是否是目录
             是：
                 A：在目的地下创建和数据源File名称一样的目录
-                B：获取数据源FiLe下所有文件或者目录的FLe数组
+                B：获取数据源FiLe下所有文件或者目录的File数组
                 C：週历该File数组，得到每一个File对象
                 D：把该File作为数据源FiLe对象，递归调用复制文件夹的方法
             不是：说明是文件，直接复制，用字节流
  */
 public class CopyFoldersDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //1：创建数据源File对象，路径是"/Users/Shared/IDEA_zemise"
         File sFile = new File("/Users/Shared/IDEA_zemise");
 
@@ -31,13 +31,27 @@ public class CopyFoldersDemo {
 
     }
     //复制文件夹
-    private static void copyFolder(File sFile, File dFile) {
+    private static void copyFolder(File sFile, File dFile) throws IOException {
         //判断数据源File是否是目录
         if(sFile.isDirectory()){
             //A：在目的地下创建和数据源File名称一样的目录
             String sourceFileName = sFile.getName();
             File newFolder = new File(dFile,sourceFileName);
+            if(!newFolder.exists()){
+                newFolder.mkdir();
+            }
 
+            //B：获取数据源FiLe下所有文件或者目录的File数组
+            File[] fileArray = sFile.listFiles();
+            for(File file:fileArray){
+                //把该File作为数据源File对象，递归调用复制文件夹的方法
+                copyFolder(file,newFolder);
+            }
+
+        }else{
+            //说明是文件，直接复制，用字节流
+            File newFile = new File(dFile,sFile.getName());
+            copyFile(sFile,newFile);
         }
     }
 
