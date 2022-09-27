@@ -9,10 +9,10 @@ import java.io.*;
     思路：
         1：创建数据源File对象，路径是"/Users/Shared/IDEA_zemise"
         2：创建目的地FiLe对象，路径是"myCharStream"
-        3：与方法实现文件夹的复制，参数为数据源FiLe对象和目的地FiLe对象
+        3：写方法实现文件夹的复制，参数为数据源FiLe对象和目的地FiLe对象
         4：判断数据源File是否是目录
             是：
-                A：在自的地下创建和数据源File名称一样的目录
+                A：在目的地下创建和数据源File名称一样的目录
                 B：获取数据源FiLe下所有文件或者目录的FLe数组
                 C：週历该File数组，得到每一个File对象
                 D：把该File作为数据源FiLe对象，递归调用复制文件夹的方法
@@ -20,7 +20,25 @@ import java.io.*;
  */
 public class CopyFoldersDemo {
     public static void main(String[] args) {
+        //1：创建数据源File对象，路径是"/Users/Shared/IDEA_zemise"
+        File sFile = new File("/Users/Shared/IDEA_zemise");
 
+        //2：创建目的地FiLe对象，路径是"myCharStream"
+        File dFile = new File("myCharStream");
+
+        //3：写方法实现文件夹的复制，参数为数据源FiLe对象和目的地FiLe对象
+        copyFolder(sFile,dFile);
+
+    }
+    //复制文件夹
+    private static void copyFolder(File sFile, File dFile) {
+        //判断数据源File是否是目录
+        if(sFile.isDirectory()){
+            //A：在目的地下创建和数据源File名称一样的目录
+            String sourceFileName = sFile.getName();
+            File newFolder = new File(dFile,sourceFileName);
+
+        }
     }
 
     //字节缓冲流复制文件
