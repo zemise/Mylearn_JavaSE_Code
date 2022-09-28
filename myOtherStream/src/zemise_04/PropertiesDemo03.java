@@ -1,5 +1,8 @@
 package zemise_04;
 
+import javax.annotation.processing.Filer;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
@@ -17,8 +20,17 @@ public class PropertiesDemo03 {
         //把集合中的数据保存到文件中
         myStore();
         //把文件中的数据加载到集合
+        myLoad();
 
+    }
 
+    private static void myLoad() throws IOException {
+        Properties prop = new Properties();
+        FileReader fr = new FileReader("myOtherStream/fw.txt");
+
+        //void Load (Reader reader);
+        prop.load(fr);
+        fr.close();
     }
 
     private static void myStore() throws IOException {
@@ -31,8 +43,5 @@ public class PropertiesDemo03 {
         FileWriter fw = new FileWriter("myOtherStream/fw.txt");
         prop.store(fw,null);
         fw.close();
-
-
-
     }
 }
