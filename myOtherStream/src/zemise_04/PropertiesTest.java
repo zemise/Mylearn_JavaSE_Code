@@ -1,6 +1,5 @@
 package zemise_04;
 
-import javax.annotation.processing.Filer;
 import java.io.*;
 import java.util.Properties;
 
@@ -32,17 +31,17 @@ public class PropertiesTest {
         //B：通过Properties集合获取到玩游戏的次数
         String count = prop.getProperty("count");
         int number = Integer.parseInt(count);
-        if( number >= 3){
+        if (number >= 3) {
             //C：判断次数是否到到3次了
             //如果到了，给出提示：游戏试玩已结束，想玩请充值(www.cellcraft.store）
-            System.out.println("游戏试玩已经结束，想玩请充值(www.cellcraft.store)");
-        }else{
+            GuessNumber.vipMessage();
+        } else {
             //玩游戏
             GuessNumber.start();
             number++;
-            prop.setProperty("count",String.valueOf(number));
+            prop.setProperty("count", String.valueOf(number));
             FileWriter fw = new FileWriter("myOtherStream/game.txt");
-            prop.store(fw,null);
+            prop.store(fw, null);
             fw.close();
         }
     }

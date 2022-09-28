@@ -32,4 +32,8 @@ public class GuessNumber {
             }
         }
     }
+
+    public static void vipMessage(){
+        System.out.println("游戏试玩已经结束，想玩请充值(www.cellcraft.store)");
+    }
 }
