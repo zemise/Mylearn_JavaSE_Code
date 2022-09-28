@@ -3,8 +3,10 @@ package zemise_03;
 import java.io.Serializable;
 
 public class Student implements Serializable {
+    private static final long serialVersionUID = 42L;
     private String name;
-    private int age;
+//    private int age;
+    private transient int age;
 
     public Student() {
     }

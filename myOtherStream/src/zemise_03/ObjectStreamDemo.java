@@ -16,8 +16,13 @@ import java.io.*;
 
 
     如果出问题了，如何解决呢？
+        给对象所属的类加一个值：
+            private static final long serialVersionUID = 42L;
 
     如果一个对象中的某个成员变量的值不想被序列化，又该如何实现呢？
+        用关键字transient修饰，如：
+        private transient int age;
+        给该成员变量加transient关键字修饰，该关键字标记的成员变量不参与序列化过程
  */
 public class ObjectStreamDemo {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
