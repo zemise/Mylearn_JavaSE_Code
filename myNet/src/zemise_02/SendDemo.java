@@ -1,5 +1,6 @@
 package zemise_02;
 
+import java.io.IOException;
 import java.net.*;
 
 /*
@@ -10,7 +11,7 @@ import java.net.*;
         4：关闭发送端
  */
 public class SendDemo {
-    public static void main(String[] args) throws SocketException, UnknownHostException {
+    public static void main(String[] args) throws IOException {
 
         //创建发送端的Socket对象 (DatagramSocket)
         DatagramSocket ds = new DatagramSocket();
@@ -19,10 +20,11 @@ public class SendDemo {
         // DatagramPacket (byte[] buf， int Length， InetAddress address， int port)
         // 构造一个数据包，发送长度为 Length的数据包到指定主机上的指定端口号。
         byte[] bys = "hello,udp,我来了".getBytes();
-        int length = bys.length;
-        InetAddress ip = InetAddress.getByName("192.168.43.48");
+//        int length = bys.length;
+//        InetAddress ip = InetAddress.getByName("192.168.0.107");
+//        int port =10086;
 
-//        DatagramPacket
+        DatagramPacket dp = new DatagramPacket(bys,bys.length,InetAddress.getByName("192.168.0.107"),10086);
 
         //3：调用DatagramSocket对象的方法发送数据
         //void send (DatagramPacket p) 从此套接字发送数据报包
