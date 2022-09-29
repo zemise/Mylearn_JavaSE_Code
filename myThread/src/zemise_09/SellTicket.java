@@ -1,14 +1,18 @@
 package zemise_09;
 
 public class SellTicket implements Runnable {
-    private int tickets = 100;
+//    private int tickets = 100;
+    public static int tickets = 100;
     private Object obj = new Object();
-    private int x =0;
+    private int x = 0;
+
     @Override
     public void run() {
-        while(true) {
+        while (true) {
             if (x % 2 == 0) {
-                synchronized (obj) {
+                synchronized (SellTicket.class) {
+//                synchronized (this) {
+//                synchronized (obj) {
                     if (tickets > 0) {
                         try {
                             Thread.sleep(100);
@@ -19,10 +23,47 @@ public class SellTicket implements Runnable {
                         tickets--;//tickets = 99;
                     }
                 }
-            }else {
-
+            } else {
+//                synchronized (obj) {
+//                    if (tickets > 0) {
+//                        try {
+//                            Thread.sleep(100);
+//                        } catch (InterruptedException e) {
+//                            e.printStackTrace();
+//                        }
+//                        System.out.println(Thread.currentThread().getName() + "正在出售第" + tickets + "张票");
+//                        tickets--;//tickets = 99;
+//                    }
+//                }
+                sellTicket();
             }
             x++;
+        }
+    }
+
+/*    private void sellTicket() {
+        synchronized (obj) {
+            if (tickets > 0) {
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println(Thread.currentThread().getName() + "正在出售第" + tickets + "张票");
+                tickets--;
+            }
+        }
+    }*/
+
+    private static synchronized void sellTicket() {
+        if (tickets > 0) {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(Thread.currentThread().getName() + "正在出售第" + tickets + "张票");
+            tickets--;
         }
     }
 }
