@@ -24,6 +24,7 @@ public class ServerDemo {
         String line;
         while ((line = br.readLine()) != null) {
             System.out.println("接收的信息：" + line);
+
             //给出反馈
             OutputStream os = s.getOutputStream();
             os.write("服务器已收到信息：".getBytes());
@@ -34,9 +35,7 @@ public class ServerDemo {
 //            int len = is.read(bys);
 //            System.out.println("接收的信息：" + new String(bys, 0, len));
 
-        //给出反馈
-        OutputStream os = s.getOutputStream();
-        os.write("服务器已收到信息：".getBytes());
+
 
         //释放资源
 //        ss.close();
