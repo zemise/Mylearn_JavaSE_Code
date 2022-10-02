@@ -1,4 +1,5 @@
 package zemise_02;
+
 /*
     Lambda表达式的格式：（形式参数）-> {代码块}
 
@@ -23,13 +24,13 @@ public class EatableDemo {
         });
 
         //Lambda表达式
-        useEatable(() ->{
+        useEatable(() -> {
             System.out.println("一天一苹果，医生远离我");
         });
 
     }
 
-    public static void useEatable(Eatable e){
+    public static void useEatable(Eatable e) {
         e.eat();
     }
 }
