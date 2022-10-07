@@ -37,6 +37,7 @@
       <module fileurl="file://$PROJECT_DIR$/myList/myList.iml" filepath="$PROJECT_DIR$/myList/myList.iml" />
       <module fileurl="file://$PROJECT_DIR$/myMap/myMap.iml" filepath="$PROJECT_DIR$/myMap/myMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/myMath/myMath.iml" filepath="$PROJECT_DIR$/myMath/myMath.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myMethodReference/myMethodReference.iml" filepath="$PROJECT_DIR$/myMethodReference/myMethodReference.iml" />
       <module fileurl="file://$PROJECT_DIR$/myNet/myNet.iml" filepath="$PROJECT_DIR$/myNet/myNet.iml" />
       <module fileurl="file://$PROJECT_DIR$/myObject/myObject.iml" filepath="$PROJECT_DIR$/myObject/myObject.iml" />
       <module fileurl="file://$PROJECT_DIR$/myOtherStream/myOtherStream.iml" filepath="$PROJECT_DIR$/myOtherStream/myOtherStream.iml" />
