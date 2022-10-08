@@ -22,7 +22,7 @@ public class RunnableDemo {
 
         startThread(() -> System.out.println(Thread.currentThread().getName() + "线程启动了"));
 
-
+        startThread(() -> System.out.println(Thread.currentThread().getName() + "线程启动了"));
 
     }
 
