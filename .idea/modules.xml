@@ -46,6 +46,7 @@
       <module fileurl="file://$PROJECT_DIR$/mySimpleDateFormat/mySimpleDateFormat.iml" filepath="$PROJECT_DIR$/mySimpleDateFormat/mySimpleDateFormat.iml" />
       <module fileurl="file://$PROJECT_DIR$/myString/myString.iml" filepath="$PROJECT_DIR$/myString/myString.iml" />
       <module fileurl="file://$PROJECT_DIR$/myStringBuilder/myStringBuilder.iml" filepath="$PROJECT_DIR$/myStringBuilder/myStringBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mySwing/mySwing.iml" filepath="$PROJECT_DIR$/mySwing/mySwing.iml" />
       <module fileurl="file://$PROJECT_DIR$/mySystem/mySystem.iml" filepath="$PROJECT_DIR$/mySystem/mySystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/myTest/myTest.iml" filepath="$PROJECT_DIR$/myTest/myTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/myThread/myThread.iml" filepath="$PROJECT_DIR$/myThread/myThread.iml" />
