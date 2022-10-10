@@ -39,7 +39,7 @@ public class MyClient extends JFrame {
             //绑定事件
             public void actionPerformed(ActionEvent e) {
                 //将文本框中的信息写入流
-                writer.print(tf.getText());
+                writer.println(tf.getText());
                 //将文本框中的信息显示在文本域中
                 ta.append(tf.getText() + "\n");
                 ta.setSelectionEnd(ta.getText().length());
@@ -57,10 +57,10 @@ public class MyClient extends JFrame {
         ta.append("尝试连接\n");
         try {
             //实例化Socket对象
-            socket = new Socket("127.0.0.1", 8990);
+            socket = new Socket("127.0.0.1", 10090);
             writer = new PrintWriter(socket.getOutputStream(), true);
             ta.append("完成连接\n");
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -72,8 +72,6 @@ public class MyClient extends JFrame {
         client.setSize(200, 200);
         client.setVisible(true);
         client.connect();
-
     }
-
 
 }

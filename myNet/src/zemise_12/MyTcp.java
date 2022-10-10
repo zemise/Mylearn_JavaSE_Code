@@ -21,10 +21,9 @@ public class MyTcp {
     private void getServer() {
         try {
             //实例化Socket对象
-            server = new ServerSocket(8890);
+            server = new ServerSocket(10090);
             //输出信息
             System.out.println("服务器套接字已经创建成功");
-
             while(true) {
                 System.out.println("等待客户端的连接");
                 //实例化Socket对象
@@ -36,7 +35,7 @@ public class MyTcp {
                 getClientMessage();
             }
             
-        }catch (IOException e){
+        }catch (Exception e){
             e.printStackTrace();
         }
 
@@ -47,7 +46,7 @@ public class MyTcp {
             while(true) {
                 System.out.println("客户端：" + reader.readLine());
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
