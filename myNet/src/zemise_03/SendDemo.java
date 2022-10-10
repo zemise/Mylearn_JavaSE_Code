@@ -25,7 +25,7 @@ public class SendDemo {
             }
             //创建数据，并把数据打包
             byte[] bys = line.getBytes();
-            DatagramPacket dp = new DatagramPacket(bys, bys.length, InetAddress.getByName("192.168.0.107"), 10086);
+            DatagramPacket dp = new DatagramPacket(bys, bys.length, InetAddress.getByName("192.168.43.48"), 10086);
 
             //调用DatagramSocket对象的方法发送数据
             ds.send(dp);
