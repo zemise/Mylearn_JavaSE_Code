@@ -17,6 +17,23 @@ public class JPanelTestDemo extends JFrame {
         //初始化一个面板，设置2行1列的网格布局
         JPanel p4 = new JPanel(new GridLayout(2, 1, 10, 10));
 
+        //在面板中添加按钮
+        p1.add(new JButton("1"));
+        p1.add(new JButton("2"));
+        p1.add(new JButton("3"));
+        p2.add(new JButton("4"));
+        p2.add(new JButton("5"));
+        p3.add(new JButton("6"));
+        p3.add(new JButton("7"));
+        p4.add(new JButton("8"));
+        p4.add(new JButton("9"));
+
+
+        //在容器智能鼓添加面板
+        c.add(p1);
+        c.add(p2);
+        c.add(p3);
+        c.add(p4);
 
         setTitle("这个窗体中使用列面板");
         //设置窗体大小
