@@ -18,5 +18,15 @@ public class JPanelTestDemo extends JFrame {
         JPanel p4 = new JPanel(new GridLayout(2, 1, 10, 10));
 
 
+        setTitle("这个窗体中使用列面板");
+        //设置窗体大小
+        setSize(300,200);
+        //设置窗体可见
+        setVisible(true);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    }
+
+    public static void main(String[] args) {
+        new JPanelTestDemo();
     }
 }
