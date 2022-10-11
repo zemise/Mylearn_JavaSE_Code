@@ -15,6 +15,9 @@ public class JButtonDemo extends JFrame {
         //创建容器
         Container c = getContentPane();
 
+        for(int i = 0;i<5;i++){
+
+        }
 
     }
 }
