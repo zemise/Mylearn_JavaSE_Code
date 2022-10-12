@@ -10,7 +10,7 @@ import java.net.Socket;
 public class ServerDemo {
     public static void main(String[] args) throws IOException {
         //创建ServerSocket对象
-        ServerSocket ss = new ServerSocket(12000);
+        ServerSocket ss = new ServerSocket(10086);
 
         //监听客户端，返回对应的Socket对象
         Socket s = ss.accept();
@@ -27,7 +27,7 @@ public class ServerDemo {
 
             //给出反馈
             OutputStream os = s.getOutputStream();
-            os.write("服务器已收到信息：".getBytes());
+            os.write("服务器已收到信息".getBytes());
         }
 
 //        while(true) {

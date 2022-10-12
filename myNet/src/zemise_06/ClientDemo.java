@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class ClientDemo {
     public static void main(String[] args) throws IOException {
         //创建socket对象
-        Socket s = new Socket("192.168.0.116", 12000);
+        Socket s = new Socket("127.0.0.1", 10086);
 
         //数据来自于键盘录入，自己封装
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
