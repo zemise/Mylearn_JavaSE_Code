@@ -12,6 +12,8 @@ public class TcpDemo extends JFrame {
     JTextField jTextField02;
     JTextArea jTextArea01;
     JTextArea jTextArea02;
+    //定义一个滚动面板，用于放置消息提示框
+    JScrollPane jScrollPane;
     //定义一个Socket的对象
     Socket client;
     //定义一个状态，返回tcp是否正在连接
@@ -37,21 +39,23 @@ public class TcpDemo extends JFrame {
 
         //消息提示框
         jTextArea01 = new JTextArea(6, 32);
+        jScrollPane = new JScrollPane(jTextArea01);
+
 
         //消息输入框
         jTextArea02 = new JTextArea(2, 32);
         //开启自动换行
         jTextArea02.setLineWrap(true);
 
-
         connect_Button = new JButton("连接");
         JButton button01 = new JButton("确定");
+
         cp.add(jLabel01);
         cp.add(jTextField01);
         cp.add(jLabel02);
         cp.add(jTextField02);
         cp.add(connect_Button);
-        cp.add(jTextArea01);
+        cp.add(jScrollPane);
         cp.add(jTextArea02);
         cp.add(button01);
 
@@ -71,9 +75,13 @@ public class TcpDemo extends JFrame {
                     //提示连接成功，可以发送消息
                     jTextArea01.append("连接成功！" + "\n开始发送消息：");
                     connectState = true;
-                } catch (IOException ex) {
+                }catch (IOException ex) {
                     ex.printStackTrace();
                     JOptionPane.showMessageDialog(null, "连接失败，请检查IP或Port");
+                }catch (Exception ex){
+                    ex.printStackTrace();
+                    JOptionPane.showMessageDialog(null, "连接失败，请检查IP或Port");
+
                 }
             }
         });
@@ -128,7 +136,7 @@ public class TcpDemo extends JFrame {
         setVisible(true);
         setResizable(false);
         //窗口在屏幕中间显示
-//        this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
     }
 
     public static void main(String[] args) {
