@@ -1,0 +1,2 @@
+className=zemise_06.Teacher
+methodName=teach

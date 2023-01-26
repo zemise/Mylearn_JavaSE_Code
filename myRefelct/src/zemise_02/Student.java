@@ -24,6 +24,10 @@ public class Student {
         this.address = address;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     //成员方法，一个私有，四个公共
     private void function() {
         System.out.println("function");
@@ -33,12 +37,16 @@ public class Student {
         System.out.println("method1");
     }
 
-    public void method2() {
+    public void method2(String name) {
+        System.out.println(name);
         System.out.println("method2");
     }
 
-    public void method3() {
+    public String method3(String name, int age) {
+        System.out.println(name + ": " + age);
         System.out.println("method3");
+
+        return name + "=======" + age;
     }
 
     public void method4() {

@@ -11,7 +11,9 @@
       <module fileurl="file://$PROJECT_DIR$/MyDuoTai/MyDuoTai.iml" filepath="$PROJECT_DIR$/MyDuoTai/MyDuoTai.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyFinal/MyFinal.iml" filepath="$PROJECT_DIR$/MyFinal/MyFinal.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyModifier/MyModifier.iml" filepath="$PROJECT_DIR$/MyModifier/MyModifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyOne/MyOne.iml" filepath="$PROJECT_DIR$/MyOne/MyOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyStatic/MyStatic.iml" filepath="$PROJECT_DIR$/MyStatic/MyStatic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyTwo/MyTwo.iml" filepath="$PROJECT_DIR$/MyTwo/MyTwo.iml" />
       <module fileurl="file://$PROJECT_DIR$/idea_demo/idea_demo.iml" filepath="$PROJECT_DIR$/idea_demo/idea_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/myAbsract/myAbsract.iml" filepath="$PROJECT_DIR$/myAbsract/myAbsract.iml" />
       <module fileurl="file://$PROJECT_DIR$/myArgs/myArgs.iml" filepath="$PROJECT_DIR$/myArgs/myArgs.iml" />
@@ -41,6 +43,7 @@
       <module fileurl="file://$PROJECT_DIR$/myMath/myMath.iml" filepath="$PROJECT_DIR$/myMath/myMath.iml" />
       <module fileurl="file://$PROJECT_DIR$/myMethodReference/myMethodReference.iml" filepath="$PROJECT_DIR$/myMethodReference/myMethodReference.iml" />
       <module fileurl="file://$PROJECT_DIR$/myNet/myNet.iml" filepath="$PROJECT_DIR$/myNet/myNet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myNewDate/myNewDate.iml" filepath="$PROJECT_DIR$/myNewDate/myNewDate.iml" />
       <module fileurl="file://$PROJECT_DIR$/myObject/myObject.iml" filepath="$PROJECT_DIR$/myObject/myObject.iml" />
       <module fileurl="file://$PROJECT_DIR$/myOtherStream/myOtherStream.iml" filepath="$PROJECT_DIR$/myOtherStream/myOtherStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/myRefelct/myRefelct.iml" filepath="$PROJECT_DIR$/myRefelct/myRefelct.iml" />
