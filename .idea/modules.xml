@@ -27,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/myCollection/myCollection.iml" filepath="$PROJECT_DIR$/myCollection/myCollection.iml" />
       <module fileurl="file://$PROJECT_DIR$/myCollections/myCollections.iml" filepath="$PROJECT_DIR$/myCollections/myCollections.iml" />
       <module fileurl="file://$PROJECT_DIR$/myDigui/myDigui.iml" filepath="$PROJECT_DIR$/myDigui/myDigui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myEnum/myEnum.iml" filepath="$PROJECT_DIR$/myEnum/myEnum.iml" />
       <module fileurl="file://$PROJECT_DIR$/myException/myException.iml" filepath="$PROJECT_DIR$/myException/myException.iml" />
       <module fileurl="file://$PROJECT_DIR$/myExtends/myExtends.iml" filepath="$PROJECT_DIR$/myExtends/myExtends.iml" />
       <module fileurl="file://$PROJECT_DIR$/myFile/myFile.iml" filepath="$PROJECT_DIR$/myFile/myFile.iml" />
@@ -48,14 +49,12 @@
       <module fileurl="file://$PROJECT_DIR$/myOtherStream/myOtherStream.iml" filepath="$PROJECT_DIR$/myOtherStream/myOtherStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/myRefelct/myRefelct.iml" filepath="$PROJECT_DIR$/myRefelct/myRefelct.iml" />
       <module fileurl="file://$PROJECT_DIR$/myRegular/myRegular.iml" filepath="$PROJECT_DIR$/myRegular/myRegular.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mySQL/mySQL.iml" filepath="$PROJECT_DIR$/mySQL/mySQL.iml" />
       <module fileurl="file://$PROJECT_DIR$/mySet/mySet.iml" filepath="$PROJECT_DIR$/mySet/mySet.iml" />
       <module fileurl="file://$PROJECT_DIR$/mySimpleDateFormat/mySimpleDateFormat.iml" filepath="$PROJECT_DIR$/mySimpleDateFormat/mySimpleDateFormat.iml" />
       <module fileurl="file://$PROJECT_DIR$/myString/myString.iml" filepath="$PROJECT_DIR$/myString/myString.iml" />
       <module fileurl="file://$PROJECT_DIR$/myStringBuilder/myStringBuilder.iml" filepath="$PROJECT_DIR$/myStringBuilder/myStringBuilder.iml" />
       <module fileurl="file://$PROJECT_DIR$/mySwing/mySwing.iml" filepath="$PROJECT_DIR$/mySwing/mySwing.iml" />
       <module fileurl="file://$PROJECT_DIR$/mySystem/mySystem.iml" filepath="$PROJECT_DIR$/mySystem/mySystem.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myTest/myTest.iml" filepath="$PROJECT_DIR$/myTest/myTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/myThread/myThread.iml" filepath="$PROJECT_DIR$/myThread/myThread.iml" />
       <module fileurl="file://$PROJECT_DIR$/studentManager/studentManager.iml" filepath="$PROJECT_DIR$/studentManager/studentManager.iml" />
     </modules>

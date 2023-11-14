@@ -1,4 +1,3 @@
-package zemise01;
 
 /**
  * <p>
