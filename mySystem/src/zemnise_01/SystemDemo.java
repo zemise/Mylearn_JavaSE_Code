@@ -1,7 +1,9 @@
 package zemnise_01;
 
+import java.io.*;
+
 public class SystemDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 /*
         System.out.println("开始");
         //public static void exit(int status);终止当前运行的Java虚拟机，非零表示异常终止
@@ -23,5 +25,14 @@ public class SystemDemo {
 
         long end = System.currentTimeMillis();
         System.out.println("共耗时" + (end- start) + "毫秒");
+
+        Runtime r = Runtime.getRuntime();
+        Process pr = r.exec("ls -all");
+        InputStream in = pr.getInputStream();
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String line;
+        while ((line = br.readLine())!= null) {
+            System.out.println(line);
+        }
     }
 }
